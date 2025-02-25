@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hughes Hauls All - Cookeville, Tennessee’s top-tier junk removal specialists. Fast, eco-friendly solutions for homes and businesses.">
+    <meta name="keywords" content="junk removal Cookeville TN, Hughes Hauls All, Putnam County trash hauling, eco-friendly junk disposal, professional junk pickup Tennessee">
+    <meta name="author" content="Hughes Hauls All">
+    <title>Hughes Hauls All | Cookeville, TN’s Elite Junk Removal Experts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Hughes Hauls All</div>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Quote Calculator -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Unleash Your Space with Cookeville’s Premier Junk Removal Crew</h1>
+            <p>Transform your cluttered chaos into a serene sanctuary with Hughes Hauls All—Cookeville, Tennessee’s trusted experts in swift, sustainable junk removal.</p>
+            <a href="#contact" class="cta-button">Claim Your Free Quote Now</a>
+            <div class="quote-calculator">
+                <h3>Instant Quote Estimator</h3>
+                <select id="junk-type">
+                    <option value="0">Select Junk Type</option>
+                    <option value="50">Small Items (e.g., boxes, bags)</option>
+                    <option value="100">Furniture (e.g., sofa, table)</option>
+                    <option value="150">Appliances (e.g., fridge, washer)</option>
+                    <option value="200">Yard Debris (e.g., branches, leaves)</option>
+                </select>
+                <input type="number" id="quantity" placeholder="Quantity" min="1">
+                <button onclick="calculateQuote()">Estimate Cost</button>
+                <p id="quote-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <h2>Our Story: Hauling Happiness to Cookeville</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1621955961555-8c29e3b4e1b2" alt="Hughes Hauls All team in Cookeville, TN" onerror="this.src='https://via.placeholder.com/400x300?text=Team+At+Work'">
+            <p>At Hughes Hauls All, we’re your Cookeville neighbors with a mission: turning cluttered spaces into havens of peace across Putnam County. From the dusty relics of your attic to the overgrown chaos of your backyard, we’ve been hauling away Tennessee troubles since day one. Our team blends eco-conscious practices—donating to local charities and recycling wherever possible—with a fierce dedication to professionalism and a sprinkle of Upper Cumberland charm. Whether it’s a single chair or an entire estate cleanup near Tennessee Tech, we’re here to lift your burden and boost your bliss!</p>
+        </div>
+    </section>
+
+    <!-- Services Section with Lightbox -->
+    <section id="services" class="section">
+        <h2>Our Comprehensive Junk Removal Solutions</h2>
+        <p>We tackle every mess with precision—no job’s too big or too small for our Cookeville crew. Explore our services below!</p>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential junk removal in Cookeville" onclick="openLightbox(this.src, this.alt)" onerror="this.src='https://via.placeholder.com/250x200?text=Home+Cleanup'">
+                <h3>Residential Decluttering Mastery</h3>
+                <p>Banish the clutter from your Cookeville home with our expert touch. We haul away everything—old mattresses, broken TVs, or that treadmill-turned-clothes-rack—leaving your space airy, open, and ready for whatever’s next.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1576765607924-39f390e94d98" alt="Commercial junk hauling" onclick="openLightbox(this.src, this.alt)" onerror="this.src='https://via.placeholder.com/250x200?text=Business+Cleanup'">
+                <h3>Commercial Space Revitalization</h3>
+                <p>Give your Cookeville business a facelift with our streamlined hauling services. From outdated office desks to renovation rubble, we clear the way for productivity and polish, keeping your operation humming.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1594991957795-be0266e65c80" alt="Yard debris removal" onclick="openLightbox(this.src, this.alt)" onerror="this.src='https://via.placeholder.com/250x200?text=Yard+Cleanup'">
+                <h3>Yard & Outdoor Renewal</h3>
+                <p>Reclaim your slice of Tennessee paradise. We sweep away storm debris, overgrown brush, and more, transforming your yard into a pristine retreat worthy of Cookeville’s scenic beauty.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2>What Cookeville Says About Us</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-item">
+                <p>“Hughes Hauls All turned my junk-filled garage into a workshop in hours. Fast, friendly, and the best in Cookeville hands down!”</p>
+                <span>- Sarah T., Cookeville Resident</span>
+            </div>
+            <div class="testimonial-item">
+                <p>“Our Broad Street storefront got a total refresh thanks to their crew. Affordable, professional, and eco-minded—couldn’t ask for more!”</p>
+                <span>- Mike R., Local Business Owner</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2>Ready to Haul Away Your Hassles?</h2>
+        <p>Let’s banish the junk and bring back the joy to your Cookeville space. Fill out the form or give us a shout—we’re standing by!</p>
+        <form id="contact-form" onsubmit="validateForm(event)">
+            <input type="text" id="name" placeholder="Your Full Name" required>
+            <input type="email" id="email" placeholder="Your Email Address" required>
+            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="message" placeholder="Describe Your Junk Removal Needs" required></textarea>
+            <button type="submit" class="cta-button">Get Started Today</button>
+            <p id="form-message"></p>
+        </form>
+        <p>Reach Us: (931) 555-1234 | Email: info@hugheshaulsall.com | Located in the Heart of Cookeville, TN</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <details>
+                <summary>What types of junk do you remove?</summary>
+                <p>We take it all—furniture, appliances, yard waste, construction debris, and beyond. If it’s cluttering your Cookeville life, we’ve got it covered!</p>
+            </details>
+            <details>
+                <summary>How do you keep it eco-friendly?</summary>
+                <p>We donate usable items to Putnam County charities and recycle materials locally—keeping Tennessee green is our priority.</p>
+            </details>
+            <details>
+                <summary>What’s your turnaround time?</summary>
+                <p>We’re fast—same-day or next-day service in Cookeville and Putnam County, tailored to your schedule. Call us now!</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Hughes Hauls All | Elevating Spaces Across Cookeville, Tennessee</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
